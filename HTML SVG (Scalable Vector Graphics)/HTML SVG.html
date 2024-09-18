@@ -1,0 +1,80 @@
+HTML SVG (Scalable Vector Graphics) -
+1. SVG defines vector-based graphics in XML, which can be directly embedded in HTML pages.
+2. SVG graphics are scalable, and do not lose any quality if they are zoomed or resized:
+3. SVG is supported by all major browsers.
+4. SVG stands for Scalable Vector Graphics
+5. SVG is used to define vector-based graphics for the Web
+6. SVG defines graphics in XML format
+7. Each element and attribute in SVG files can be animated
+8. SVG is a W3C recommendation
+9. SVG integrates with other standards, such as CSS, DOM, XSL and JavaScript
+
+<svg> Element - 
+1. The HTML <svg> element is a container for SVG graphics.
+2. SVG has several methods for drawing paths, rectangles, circles, polygons, text, and much more.
+
+A. SVG Circle  -
+Example
+<!DOCTYPE html>
+<html>
+<body>
+<svg width="100" height="100">
+  <circle cx="60" cy="60" r="50"
+  stroke="green" stroke-width="4" fill="blue" />
+</svg>
+</body>
+</html>
+
+B. SVG Rectangle - 
+Example
+<!DOCTYPE html>
+<html>
+<body>
+<svg width="500" height="120">
+  <rect x="10" y="10" width="200" height="100" stroke="red" stroke-width="6" fill="blue" />
+</svg>
+</body>
+</html>
+
+B (I). SVG Rectangle with Opacity and Rounded Corners - 
+Example - 
+<!DOCTYPE html>
+<html>
+<body>
+<svg width="500" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+</svg>
+</body>
+</html>
+
+C. SVG Star - 
+Example
+<!DOCTYPE html>
+<html>
+<body>
+<svg width="400" height="300">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+</body>
+</html>
+
+C (I). SVG Gradient Ellipse and Text - 
+Example - 
+<!DOCTYPE html>
+<html>
+<body>
+<svg height="140" width="600">
+  <defs>
+    <linearGradient id="grad1">
+      <stop offset="0%" stop-color="yellow" />
+      <stop offset="100%" stop-color="red" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+</svg>
+</body>
+</html>
+
